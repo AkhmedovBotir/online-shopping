@@ -1,0 +1,42 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999999999999999999;
+    background-color: #fff;
+    padding: 0.1vh 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.card {
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+.product {
+    box-shadow: 0 0 10px 1px #aaa;
+    cursor: pointer;
+    transition: border .3s ease;
+}
+
+.product.selected {
+    box-shadow: 0 0 10px 1px #4CAF50;
+    border-color: #4CAF50;
+}
+
+.card-img-top {
+    padding: 1.5vh;
+}

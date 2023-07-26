@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="d-flex justify-content-between align-items-center container my-3">
+            <div class="col fw-bold fs-5">
+                <span class="text-primary">Easy</span>
+                <span class="text-dark">Market</span>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+                <div class="d-flex align-items-end flex-column mx-3">
+                    <span class="text-success"><span id="money-text">0</span>$</span>
+                    <span class="text-danger">-<span id="money-harajat">0</span>$</span>
+                </div>
+                <button class="btn btn-success mx-3" id="buy">Buy</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Payment</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Enter the payment amount</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="number" class="form-control" id="money-in-wallet-input"
+                                    placeholder="Enter in dollar currency only ($)">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                    id="save-money">💳Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div class="row row-cols-1 row-cols-md-4 g-6 d-flex justify-content-between ">
+            <div class="col my-3">
+                <div class="card product" data-product-price="800">
+                    <img src="https://www.fujioka.com.br/arquivos/ids/191743-1000-1000/571585_NOTE-LENO-IDEAPAD-3I-CEL-4GB-500GB-LNX--1-.png?v=637732677477630000"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Corei7 Lenovo notebook</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="600">
+                    <img src="https://openshop.uz/uploads/products/photos/LP1jjUwjJygnd93eQUG9zf3O3KIKOIiX.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Iphone 11 pro max</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="400">
+                    <img src="https://frankfurt.apollo.olxcdn.com/v1/files/hqeaevl0kenz2-UZ/image"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Xiaomi redmi note 11</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="1200">
+                    <img src="https://tovar.uz/images/company/444/tovar/78805/o_61c2bd829d85e.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Huawei matebook 14 Corei5</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="1250">
+                    <img src="https://openshop.uz/uploads/products/photos/202106/iCn7ll6x7wREEKqTSfzp10fe7VTRkaUSTS5cdr9z.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">IPad pro 12.9</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="360">
+                    <img src="https://m.media-amazon.com/images/I/51BTZF3RRgL.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">DJI Ronin SC</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card product" data-product-price="60">
+                    <img src="https://www.digimaxpakistan.com/cdn/shop/products/jmary-LED-RGB-fm128_grande.jpg?v=1680943608"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">RGB Jmary Led lamp</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-danger fw-bold text-center d-flex justify-content-center fs-6">
+                            <span class="product_price"></span>$</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
